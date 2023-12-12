@@ -20,7 +20,7 @@ function TopStories () {
           return response.json()
         }
       })
-      .then((jsonifiedResonse) => {
+      .then((jsonifiedResponse) => {
         const action = getTopStoriesSuccess(jsonifiedResponse.results)
         dispatch(action);
       })
